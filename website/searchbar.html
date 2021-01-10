@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script>
+        function myFunction(){
+            var x = f1.usearchterm.value;
+            if(x =="taj mahal souvenir"){
+                window.open("searchresult.html");
+            }
+            else{
+                window.open("noresultsfound.html");
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>Try Searching Anything</title>
+    <link  rel="stylesheet" type="text/css" href="css/searchbarstyle.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="search">
+        <form name="f1" method="get" action="">
+        <input type="text" class="searchterm" name="usearchterm" placeholder="What are you looking for today?">
+        <button type="submit" onclick="myFunction()" class="searchbtn">Go</button>
+        </form>
+    </div>
+</div>
+<section>
+
+</section>
+</body>
+</html>

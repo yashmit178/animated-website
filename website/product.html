@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PMD/Products</title>
+    <link rel="stylesheet" type="text/css" href="css/productstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+        h3{
+        font-family:hinglishfont;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <h1 class="animate infinite heartBeat"> India- A Tourist Paradise </h1> </div>
+            <div class="menu">
+                <a href="index.html" >Home</a>
+                <a href="product.html">Products</a>
+                <a href="contact.html" >Contact</a>
+                <a href="about.html" >About</a>
+            </div>
+        </nav>
+            <main>
+                <section>
+                    <h3>Our Products</h3>
+                    <div class="border"></div>
+                    <div class="card">
+                      <div class="top-section">
+                        <img id="image-container" src="images/taj1.jpg" alt="">
+                        <div class="navv">
+                          <img onclick="change_img(this)" src="images/taj1.jpg" alt="">
+                          <img onclick="change_img(this)" src="images/taj3.jpg" alt="">
+                          <img onclick="change_img(this)" src="images/taj4.jpg" alt="">
+                        </div>
+                        <div class="price">$79+Shp</div>
+                      </div>
+                    <div class="product-info">
+                      <div class="name">Taj Mahal Souvenir</div>
+                      <div class="dis">Pure Marble Meets Perfect Craftsmanship</div>
+                      <a onclick="myFunction()" class="btn" href="contact.html">Add to Cart</a>
+                    </div>
+                    </div>
+                    <script type="text/javascript">
+                         function myFunction() {
+                            alert("This feature will be live soon until then please feel free to Contact Us for the same, We sincerely regret the inconvenience caused.");
+                        }
+                        var container = document.getElementById("image-container");
+                        function change_img(image){
+                            container.src = image.src;
+                        }
+                    </script>
+                </section>
+            </main>
+    </header>
+</body>
+</html>

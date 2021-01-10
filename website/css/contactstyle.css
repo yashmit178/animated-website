@@ -1,0 +1,134 @@
+@font-face{
+    src : url(samarkan.TTf);
+    font-family: hinglishfont;
+}
+
+*{
+    margin:0; padding:0; box-sizing: border-box;
+    font-family: 'Aladin', cursive;
+}
+
+header{
+    margin:0; padding:0;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('../images/pink mahal.jpg');
+    background-repeat:repeat;
+    background-size:cover;
+    animation: fade 22s infinite;
+}
+
+@keyframes fade{
+    0%{
+        background-image: url('../images/pink mahal.jpg');
+    }
+    20%{
+        background-image: url('../images/himachal.jpg');
+    }
+    40%{
+        background-image: url('../images/jammukashmir.jpg');
+    }
+    60%{
+        background-image: url('../images/kerala.jpg');
+    }
+    80%{
+        background-image: url('../images/manali.jpg');
+    }
+    100%{
+        background-image: url('../images/udaipur.jpg');
+    }
+}
+
+nav{
+    width:100%; height:15vh;
+    background: rgba(0,0,0,0.2);
+    color:white; display: flex; justify-content: space-between;
+    align-items:center; text-transform: uppercase;
+}
+
+nav .logo{
+    width:25%; text-align: center;
+}
+
+nav .menu{
+    width:40%;
+    display:flex; justify-content:space-between;
+}
+
+nav .menu a {
+    width:25%;
+    text-decoration:none; color:white;
+    font-weight:bold;
+}
+
+nav .menu a:nth-child(3) {
+    color: #00b894;
+}
+
+
+main{
+    width:100%;
+    height:85vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center; color:white;
+}
+
+section{
+
+}
+
+section h3{
+    font-size: 35px; font-weight:200; letter-spacing:3px;
+    text-shadow:1px 1px 10px black;
+}
+
+.border{
+    width:100px;
+    height:10px;
+    background:#00b894;
+    margin: 40px auto;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display:bloc;
+    width:100%;
+    box-sizing: border-box;
+    margin:16px 0;
+    border: 0;
+    background:#fff;
+    padding:20px 40px;
+    outline: none;
+    color:#ddd;
+    transition: 1s;
+}
+
+.contact-form-text:hover{
+    box-shadow: 0 0 10px 4px #00b894;
+}
+
+textarea.contact.form.text{
+    resize: none;
+    height: 120px;
+}
+
+.contact-from-btn{
+    float: right;
+    border: 0;
+    background: #00b894;
+    color:#fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 5s;
+}
+
+.contact-form-btn: hover{
+    background: ##00b894;
+}
